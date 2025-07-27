@@ -46,7 +46,7 @@ const Footer = () => {
 					<h4 className="text-white font-semibold mb-4">Contact</h4>
 					<ul className="space-y-2 text-sm">
 						<li>📞 +88 01711533605, +88 01897717462</li>
-						<li>✉️ info@lbenterprisebd.com</li>
+						<li>✉️ info@lbchemicalindustries.com</li>
 						<li>🏢 Office Address: 47/4 Toyenbee Circular Road (3rd Floor), Dhaka-1100, Bangladesh</li>
 						<li>🏢 Factory Address: South Baghapur, Abdullahpur, Keraniganj, Abdullahpur, Dhaka</li>
 					</ul>

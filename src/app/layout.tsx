@@ -5,7 +5,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "LB Enterprise BD | Water Treatment Solution provider in Bangladesh",
+  title: "LB Chemical Industries | Water Treatment Solution provider in Bangladesh",
   description:
     "Best and top water treatment solution provider in Bangladesh. Sole distributor for wasa a Bangladesh government sector for water supply in whole Bangladesh.",
 };

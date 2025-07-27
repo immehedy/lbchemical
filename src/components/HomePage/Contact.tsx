@@ -21,7 +21,7 @@ function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Phone</h3>
-                    <p className="text-gray-300">+1 (555) 123-4567</p>
+                    <p className="text-gray-300">+88 01711533605, +88 01897717462</p>
                   </div>
                 </div>
 
@@ -31,7 +31,7 @@ function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <p className="text-gray-300">info@lbchemical.com</p>
+                    <p className="text-gray-300">info@lbchemicalindustries.com</p>
                   </div>
                 </div>
 
