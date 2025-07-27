@@ -35,13 +35,14 @@ function Contact() {
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-4">
+                <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
                     <MapPin className="h-6 w-6" />
                   </div>
                   <div>
                     <h3 className="font-semibold">Address</h3>
-                    <p className="text-gray-300">123 Industrial Blvd, Water City, WC 12345</p>
+                    <p className="text-gray-300"><span>Office Address: 47/4 Toyenbee Circular Road (3rd Floor), Dhaka-1100, Bangladesh</span> <br/>
+						<span>Factory Address: South Baghapur, Abdullahpur, Keraniganj, Abdullahpur, Dhaka</span></p>
                   </div>
                 </div>
               </div>
