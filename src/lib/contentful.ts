@@ -1,15 +1,15 @@
 // lib/contentful.ts
-import * as contentful from 'contentful';
-import { EntrySkeletonType } from 'contentful';
+import { createClient } from 'contentful'
 
-export const client = contentful.createClient({
+export const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID!,
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN!,
-});
+})
 
-export async function fetchEntries<
-  T extends EntrySkeletonType = EntrySkeletonType
->(contentType: string) {
-  const entries = await client.getEntries<T>({ content_type: contentType });
-  return entries.items;
+// Fully dynamic fetchEntries with no type restriction on fields
+export async function fetchEntries(contentType: string): Promise<any[]> {
+  const normalizedType = contentType.toLowerCase().trim()
+
+  const entries = await client.getEntries({ content_type: normalizedType })
+  return entries.items
 }
