@@ -1,5 +1,5 @@
 import { fetchEntries } from '@/lib/contentful'
-import { Badge, Phone } from 'lucide-react'
+import { Phone } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'

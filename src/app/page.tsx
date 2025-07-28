@@ -9,20 +9,20 @@ import License from "@/components/HomePage/License";
 import Services from "@/components/HomePage/Services";
 
 
-export default function Home() {
+export default async function Home() {
   return (
     <>
       {/* Hero Section */}
-      <Hero/>
+      {await Hero()}
 
       {/* Services Section */}
-      <Services/>
+      {await Services()}
 
        {/* New Applications Section */}
-        <Applications/>
+       {await Applications()}
 
       {/* About Section */}
-      <About/>
+      {await About()}
 
       {/* Proprietor Journey Section */}
       <Journey/>
