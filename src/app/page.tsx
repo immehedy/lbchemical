@@ -28,7 +28,7 @@ export default async function Home() {
       {await Journey()}
 
       {/* Our Clients Section */}
-      <Client/>
+      {await Client()}
 
       {/* Licenses & Certifications Section */}
       <License/>
