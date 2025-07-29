@@ -31,10 +31,11 @@ export default async function Home() {
       {await Client()}
 
       {/* Licenses & Certifications Section */}
-      <License/>
+      {await License()}
+  
 
       {/* Industries Section */}
-      <Industires/>
+      {await Industires()}
 
       {/* Contact Section */}
       <Contact/>

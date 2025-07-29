@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-function Industires() {
+async function Industires() {
   return (
     <section className="py-20 bg-blue-50">
         <div className="container mx-auto px-4">
