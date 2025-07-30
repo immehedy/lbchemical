@@ -1,4 +1,5 @@
 import { fetchEntries } from '@/lib/contentful'
+import { getColorClasses } from '@/lib/getColorClasses'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import {
   CheckCircle,
@@ -92,10 +93,12 @@ async function Client() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {industryLists.map((item: any, idx: number) => {
               const Icon = iconMap[item.icon as keyof typeof iconMap]
+
+            const { bg600 } = getColorClasses(item.color)
               return (
                 <div key={idx} className="text-center p-6 bg-white rounded-lg">
                   <div
-                    className={`w-12 h-12 bg-${item.color}-600 rounded-full flex items-center justify-center mx-auto mb-3`}
+                    className={`w-12 h-12 ${bg600} rounded-full flex items-center justify-center mx-auto mb-3`}
                   >
                     {Icon && <Icon className="h-6 w-6 text-white" />}
                   </div>

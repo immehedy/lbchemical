@@ -1,4 +1,5 @@
 import { fetchEntries } from '@/lib/contentful'
+import { getColorClasses } from '@/lib/getColorClasses'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { CheckCircle, Droplets, LucideIcon, Shield, Users, Zap } from 'lucide-react'
 import React from 'react'
@@ -38,6 +39,7 @@ async function License() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {lists.map((item: any, idx: number) => {
             const Icon = iconMap[item.icon as keyof typeof iconMap]
+            const { bg, text, border } = getColorClasses(item.color)
             return (
               <Card
                 key={idx}
@@ -45,7 +47,7 @@ async function License() {
               >
                 <CardHeader>
                   <div
-                    className={`w-16 h-16 bg-${item.color}-100 rounded-lg flex items-center justify-center mb-4`}
+                    className={`w-16 h-16 ${bg} rounded-lg flex items-center justify-center mb-4`}
                   >
                     {Icon && <Icon className={`h-8 w-8 text-${item.color}-600`} />}
                   </div>
@@ -54,7 +56,7 @@ async function License() {
                 </CardHeader>
                 {item.badge && (
                   <CardContent>
-                    <div className="flex items-center text-sm text-green-600 font-medium">
+                    <div className="flex items-center text-sm text-purple-600 font-medium">
                       <CheckCircle className="h-4 w-4 mr-2" />
                       {item.badge}
                     </div>
