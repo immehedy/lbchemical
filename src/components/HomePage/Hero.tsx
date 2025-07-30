@@ -26,11 +26,11 @@ async function Hero() {
   const imageAlt = backgroundimage?.fields?.title || 'Hero image'
 
   return (
-    <section id="home" className="bg-gradient-to-br from-blue-50 to-cyan-50 py-20">
+    <section id="home" className="bg-gradient-to-br from-blue-50 to-cyan-50 py-5 md:py-20">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center sm:text-left">
-            <p className='mb-4 bg-blue-100 py-1 px-2 rounded-full w-1/2 text-blue-800 text-center text-sm font-semibold'>
+            <p className='mb-4 bg-blue-100 py-1 px-2 rounded-full w-full md:w-1/2 text-blue-800 text-center text-sm font-semibold'>
             {badgeText}
             </p>
 
