@@ -8,8 +8,7 @@ export const client = createClient({
 
 // Fully dynamic fetchEntries with no type restriction on fields
 export async function fetchEntries(contentType: string): Promise<any[]> {
-  const normalizedType = contentType.toLowerCase().trim()
 
-  const entries = await client.getEntries({ content_type: normalizedType })
+  const entries = await client.getEntries({ content_type: contentType })
   return entries.items
 }

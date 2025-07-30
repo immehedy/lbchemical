@@ -62,19 +62,6 @@ async function Services() {
                   <CardDescription>{documentToReactComponents(subdetails)}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  {/* <ul className="space-y-2 text-sm text-gray-600">
-                    {desclist?.content?.map((item: any, idx: number) => {
-                      console.log("cont", item)
-                      const text = item?.content
-                      return (
-                        <li key={idx} className="flex items-center">
-                          <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                          {text}
-                        </li>
-                      )
-                    })}
-                    
-                  </ul> */}
                   <div className="space-y-2 text-sm text-gray-600">
   {documentToReactComponents(desclist)}
 </div>

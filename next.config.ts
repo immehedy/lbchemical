@@ -4,7 +4,8 @@ const nextConfig: NextConfig = {
   images: {
     domains: [
       // Your existing domains, if any
-      'images.ctfassets.net'
+      'images.ctfassets.net',
+      'placehold.co'
     ],
   },
 };
