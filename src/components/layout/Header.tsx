@@ -9,6 +9,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-lg shadow-sm w-full">
        <div className="container mx-auto px-4 py-2 flex items-center justify-between">
           {/* Header logo section */}
+            <Link href="/">
             <Image
               src="/logo.jpg"
               alt="LB Chemical Industries Logo"
@@ -16,6 +17,7 @@ const Header = () => {
               height={60}
               className="h-14 w-auto"
             />
+            </Link>
           <nav className="hidden md:flex space-x-8">
             <a href="#home" className="text-gray-700 hover:text-[var(--primary)] font-medium">
               Home
