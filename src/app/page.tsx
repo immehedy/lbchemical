@@ -8,8 +8,10 @@ import Journey from "@/components/HomePage/Journey";
 import License from "@/components/HomePage/License";
 import Services from "@/components/HomePage/Services";
 
+export const revalidate = 3600; // Revalidate content every hour
 
 export default async function Home() {
+  
   return (
     <>
       {/* Hero Section */}
